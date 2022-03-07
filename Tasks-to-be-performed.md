@@ -57,7 +57,7 @@ If you would rather use something other than Visual Studio
 
 __Note:__ This isn't the only way to accomplish implementation, however; this is what the project's tests are expecting. Implementing the features in a different way will likely result in being marked as incomplete / incorrect.
 
-- [ ] Add support for Ranked Grading
+- [X] Add support for Ranked Grading
 	- [X] Creating The `GradeBookType` Enum.
 		- [X] Create a new Enum `GradeBookType`.
 			- This should be located in the `Enums` directory.
@@ -111,7 +111,7 @@ __Note:__ This isn't the only way to accomplish implementation, however; this is
 			- If there are less than 5 students write "Ranked grading requires at least 5 students." to the Console.
 			- If there are 5 or more students call the base class's `CalculateStudentStatistics` method using `base.CalculateStudentStatistics`.
 
-	- [ ] Update `StartingUserInterface`'s `CreateCommand` method
+	- [X] Update `StartingUserInterface`'s `CreateCommand` method
 		- [X] Update `CreateCommand`'s Conditions
 			- When checking the `parts.Length` it should check that `parts.Length` is not 3.
 			- If `parts.Length` is not 3 write "Command not valid, Create requires a name and type of gradebook." to the Console.
@@ -154,8 +154,8 @@ __Note:__ This isn't the only way to accomplish implementation, however; this is
 			- This should use `parts[3]` for the last parameter where the gradebooks are instantiated.
 			- Update the message provided by this condition to write to the console "Command not valid, Create requires a name, type of gradebook, if it's weighted (true / false).".
 
-	- [ ] Update `BaseGradeBook.GetGPA`
-		- [ ] Add 1 point to GPA when student is `Honors` or `DualEnrolled`
+	- [X] Update `BaseGradeBook.GetGPA`
+		- [X] Add 1 point to GPA when student is `Honors` or `DualEnrolled`
 
 	- [ ] Update `HelpCommand`
 		- [ ] Change where the `HelpCommand` outlines the "create" command to say "Create 'Name' 'Type' 'Weighted' - Creates a new gradebook where 'Name' is the name of the gradebook, 'Type' is what type of grading it should use, and 'Weighted' is whether or not grades should be weighted (true or false)."
